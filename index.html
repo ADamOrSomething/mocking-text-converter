@@ -12,14 +12,23 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="input-group mt-3">
+  <div class="container mt-4">
+    <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3">Text to convert</span>
+        <span class="input-group-text">Text to convert</span>
       </div>
-      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      <textarea class="form-control" id="input"></textarea>
+    </div>
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Converted text</span>
+      </div>
+      <textarea class="form-control" id="output" readonly></textarea>
     </div>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
