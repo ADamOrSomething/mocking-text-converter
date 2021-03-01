@@ -6,6 +6,11 @@ const convertText = text => {
   let result = '';
 
   for (let char of text) {
+    if (!/\w/.test(char)) {
+      result += char;
+      continue;
+    }
+
     if (capital) char = char.toUpperCase();
     else char = char.toLowerCase();
     capital = !capital;
